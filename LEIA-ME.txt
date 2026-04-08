@@ -1,0 +1,102 @@
+╔══════════════════════════════════════════════════════════════╗
+║           RYB ENGENHARIA — SITE HTML + CSS + JS             ║
+║           Como configurar e publicar online                 ║
+╚══════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ ESTRUTURA DOS ARQUIVOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ryb_html_v2/
+  ├── index.html       ← Arquivo principal (abre no navegador)
+  ├── css/
+  │   └── style.css    ← Todos os estilos visuais
+  ├── js/
+  │   └── main.js      ← Navegação e formulário
+  └── LEIA-ME.txt      ← Este arquivo
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ VISUALIZAR LOCALMENTE (sem instalar nada)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Opção 1 — Mais simples:
+  Clique duas vezes no arquivo index.html
+  Abre direto no navegador!
+
+Opção 2 — Pelo VS Code:
+  1. Abra a pasta ryb_html_v2 no VS Code
+  2. Clique com botão direito no index.html
+  3. Selecione "Open with Live Server"
+     (instale a extensão Live Server se não tiver)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ CONFIGURAR O FORMULÁRIO DE ORÇAMENTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+O formulário usa o FORMSPREE (gratuito — 50 envios/mês).
+
+PASSO 1 — Criar conta
+  → Acesse: https://formspree.io
+  → Crie conta com: rubensmzybr@outlook.com
+
+PASSO 2 — Criar formulário
+  → Clique em "+ New Form"
+  → Nome: Orçamento RYB → Create Form
+  → Copie a URL: https://formspree.io/f/xyzABCDE
+
+PASSO 3 — Colar no JS
+  → Abra: js/main.js no VS Code
+  → Localize a linha:
+      const FORMSPREE_URL = 'https://formspree.io/f/COLE_SEU_CODIGO_AQUI'
+  → Substitua COLE_SEU_CODIGO_AQUI pelo seu código
+  → Salve (Ctrl+S)
+
+PASSO 4 — Confirmar e-mail do Formspree
+  → Verifique o e-mail rubensmzybr@outlook.com
+  → Clique no link de confirmação enviado pelo Formspree
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ PUBLICAR ONLINE NO NETLIFY (GRÁTIS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PASSO 1 — Criar conta
+  → Acesse: https://netlify.com → Sign up
+
+PASSO 2 — Deploy (arrastar a PASTA, não o arquivo!)
+  → Na tela inicial, procure:
+    "Drag and drop your site folder here"
+  → Arraste a PASTA ryb_html_v2 inteira para essa área
+    (importante: a pasta, não só o index.html)
+  → Aguarde ~30 segundos
+
+PASSO 3 — Site no ar!
+  → Link: https://nome-aleatorio.netlify.app
+
+PASSO 4 — Personalizar o link
+  → Site configuration → Change site name
+  → Digite: ryb-engenharia
+  → Novo link: https://ryb-engenharia.netlify.app
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ ATUALIZAR O SITE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  → No Netlify: Deploys → arraste a pasta atualizada
+  → Site atualizado em 30 segundos!
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ ONDE EDITAR CADA COISA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Textos e conteúdo  → index.html
+  Cores e fontes     → css/style.css  (variáveis no topo :root)
+  Navegação/formulário → js/main.js
+  Telefone/WhatsApp  → index.html (seção CONTATO)
+  E-mail Formspree   → js/main.js (FORMSPREE_URL)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

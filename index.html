@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projetos, instalações e manutenção de sistemas elétricos prediais, comerciais e hospitalares.">
+  <title>RYB Engenharia — Soluções Elétricas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAV
+════════════════════════════════════════════ -->
+<nav>
+  <a class="nav-logo" onclick="show('home')">RYB<span>ENG</span></a>
+  <ul class="nav-links">
+    <li><a onclick="show('home')"      id="nl-home"      class="active">Início</a></li>
+    <li><a onclick="show('sobre')"     id="nl-sobre">Empresa</a></li>
+    <li><a onclick="show('servicos')"  id="nl-servicos">Serviços</a></li>
+    <li><a onclick="show('portfolio')" id="nl-portfolio">Portfólio</a></li>
+    <li><a onclick="show('contato')"   id="nl-contato">Contato</a></li>
+    <li><a onclick="show('orcamento')" id="nl-orcamento" class="nav-cta">Orçamento</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="show('home');toggleMenu()">Início</a>
+  <a onclick="show('sobre');toggleMenu()">Empresa</a>
+  <a onclick="show('servicos');toggleMenu()">Serviços</a>
+  <a onclick="show('portfolio');toggleMenu()">Portfólio</a>
+  <a onclick="show('contato');toggleMenu()">Contato</a>
+  <a onclick="show('orcamento');toggleMenu()" class="nav-cta">Orçamento</a>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HOME
+════════════════════════════════════════════ -->
+<section id="home" class="active">
+
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Engenharia Elétrica Especializada</div>
+      <div class="hero-title">
+        <span class="line1">SOLUÇÕES</span>
+        <span class="line2">ELÉTRICAS</span>
+        <span class="line3">TÉCNICAS</span>
+      </div>
+      <p class="hero-desc">
+        Projetos, instalações e manutenção de sistemas elétricos prediais,
+        comerciais e hospitalares — com planejamento técnico e conformidade
+        com normas vigentes.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="show('orcamento')">Solicitar Orçamento</button>
+        <button class="btn-outline" onclick="show('servicos')">Ver Serviços</button>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Anos de experiência</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">NR-10</div>
+        <div class="stat-label">Conformidade técnica</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Comprometimento</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-servicos">
+    <div class="section-header">
+      <div class="section-tag">Principais serviços</div>
+      <h2 class="section-title">O QUE <span>FAZEMOS</span></h2>
+    </div>
+    <div class="mini-grid">
+      <div class="mini-card">
+        <div class="mini-icon">⚡</div>
+        <div class="mini-title">Projetos Elétricos</div>
+        <p>Dimensionamento, cálculo de carga e diagramas conforme ABNT.</p>
+      </div>
+      <div class="mini-card">
+        <div class="mini-icon">🔌</div>
+        <div class="mini-title">Instalações Elétricas</div>
+        <p>Execução completa de infraestrutura elétrica predial e comercial.</p>
+      </div>
+      <div class="mini-card">
+        <div class="mini-icon">🗂️</div>
+        <div class="mini-title">Montagem de Quadros</div>
+        <p>Disjuntores, barramentos e organização de circuitos elétricos.</p>
+      </div>
+      <div class="mini-card">
+        <div class="mini-icon">🔧</div>
+        <div class="mini-title">Manutenção Elétrica</div>
+        <p>Preventiva e corretiva com inspeção técnica e testes elétricos.</p>
+      </div>
+      <div class="mini-card">
+        <div class="mini-icon">🏥</div>
+        <div class="mini-title">Suporte Hospitalar</div>
+        <p>Engenharia clínica para equipamentos e ambientes de saúde.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:48px; padding-bottom:80px;">
+      <button class="btn-outline" onclick="show('servicos')">Ver todos os serviços →</button>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SOBRE
+════════════════════════════════════════════ -->
+<section id="sobre">
+
+  <div class="page-hero">
+    <div class="section-tag">Quem somos</div>
+    <h1 class="section-title">SOBRE A <span>EMPRESA</span></h1>
+  </div>
+
+  <div class="sobre-grid">
+    <div class="sobre-text-block">
+      <p>Empresa especializada em engenharia elétrica e manutenção técnica, atuando em projetos, instalações, reformas e manutenção preventiva de sistemas elétricos.</p>
+      <p>Os serviços seguem critérios técnicos rigorosos de segurança elétrica, confiabilidade operacional e qualidade de execução — atendendo às normas técnicas vigentes da ABNT e NR-10.</p>
+      <p>Nossa equipe combina experiência prática com atualizações técnicas constantes, garantindo soluções eficientes e seguras para cada projeto.</p>
+    </div>
+    <div class="sobre-areas">
+      <div class="section-tag" style="margin-bottom:16px">Áreas de Atuação</div>
+      <div class="area-item"><div class="area-icon">🏥</div><div class="area-name">Hospitais e Unidades de Saúde</div></div>
+      <div class="area-item"><div class="area-icon">🏢</div><div class="area-name">Empresas e Comércios</div></div>
+      <div class="area-item"><div class="area-icon">🏗️</div><div class="area-name">Condomínios e Edifícios</div></div>
+      <div class="area-item"><div class="area-icon">🏠</div><div class="area-name">Residências</div></div>
+      <div class="area-item"><div class="area-icon">🩺</div><div class="area-name">Clínicas e Laboratórios</div></div>
+    </div>
+  </div>
+
+  <div class="valores-section">
+    <div class="section-header">
+      <div class="section-tag">Nossos valores</div>
+      <h2 class="section-title">PRINCÍPIOS <span>TÉCNICOS</span></h2>
+    </div>
+    <div class="valores-grid">
+      <div class="valor-card">
+        <div class="valor-num">01</div>
+        <div class="valor-title">Segurança</div>
+        <div class="valor-desc">Todas as instalações seguem rigorosamente as normas técnicas de segurança elétrica, priorizando a integridade das instalações e das pessoas.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-num">02</div>
+        <div class="valor-title">Confiabilidade</div>
+        <div class="valor-desc">Sistemas elétricos projetados e executados para máxima estabilidade operacional, com testes e verificações em cada etapa do serviço.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-num">03</div>
+        <div class="valor-title">Qualidade</div>
+        <div class="valor-desc">Uso de materiais homologados e técnicas atualizadas, garantindo durabilidade e desempenho superior nas instalações entregues.</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SERVIÇOS
+════════════════════════════════════════════ -->
+<section id="servicos">
+
+  <div class="page-hero">
+    <div class="section-tag">O que fazemos</div>
+    <h1 class="section-title">SERVIÇOS <span>TÉCNICOS</span></h1>
+  </div>
+
+  <div class="servicos-grid">
+    <div class="servico-card">
+      <div class="servico-accent"></div>
+      <div class="servico-num">01 — PROJETO</div>
+      <div class="servico-title">Projetos Elétricos</div>
+      <p class="servico-desc">Dimensionamento de condutores, cálculo de carga, diagramas elétricos e memorial técnico conforme normas da ABNT.</p>
+      <div class="servico-tags">
+        <span class="tag">Cálculo de carga</span>
+        <span class="tag">Diagramas unifilares</span>
+        <span class="tag">Memorial técnico</span>
+        <span class="tag">ABNT NBR 5410</span>
+      </div>
+    </div>
+    <div class="servico-card">
+      <div class="servico-accent"></div>
+      <div class="servico-num">02 — INSTALAÇÃO</div>
+      <div class="servico-title">Instalações Elétricas</div>
+      <p class="servico-desc">Execução completa de infraestrutura elétrica, instalação de cabos, tomadas, circuitos e sistemas de iluminação.</p>
+      <div class="servico-tags">
+        <span class="tag">Infraestrutura</span>
+        <span class="tag">Cabeamento</span>
+        <span class="tag">Tomadas e circuitos</span>
+        <span class="tag">Iluminação</span>
+      </div>
+    </div>
+    <div class="servico-card">
+      <div class="servico-accent"></div>
+      <div class="servico-num">03 — QUADROS</div>
+      <div class="servico-title">Montagem de Quadros</div>
+      <p class="servico-desc">Montagem de disjuntores, barramentos e organização interna de circuitos em quadros de distribuição elétrica.</p>
+      <div class="servico-tags">
+        <span class="tag">Disjuntores</span>
+        <span class="tag">Barramentos</span>
+        <span class="tag">QDC / QGD</span>
+        <span class="tag">Distribuição</span>
+      </div>
+    </div>
+    <div class="servico-card">
+      <div class="servico-accent"></div>
+      <div class="servico-num">04 — MANUTENÇÃO</div>
+      <div class="servico-title">Manutenção Elétrica</div>
+      <p class="servico-desc">Inspeção técnica, correção de falhas, substituição de componentes e testes elétricos para manutenção preventiva e corretiva.</p>
+      <div class="servico-tags">
+        <span class="tag">Preventiva</span>
+        <span class="tag">Corretiva</span>
+        <span class="tag">Laudos técnicos</span>
+        <span class="tag">Testes elétricos</span>
+      </div>
+    </div>
+    <div class="servico-card servico-wide">
+      <div class="servico-accent"></div>
+      <div class="servico-num">05 — HOSPITALAR</div>
+      <div class="servico-title">Engenharia Clínica</div>
+      <p class="servico-desc">Suporte técnico especializado para equipamentos hospitalares e verificação de alimentação elétrica em ambientes críticos de saúde — clínicas, hospitais e laboratórios.</p>
+      <div class="servico-tags">
+        <span class="tag">Equipamentos hospitalares</span>
+        <span class="tag">Ambientes críticos</span>
+        <span class="tag">Verificação técnica</span>
+        <span class="tag">Conformidade ANVISA</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center; padding:60px 80px 80px;">
+    <button class="btn-primary" onclick="show('orcamento')">Solicitar Orçamento →</button>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PORTFÓLIO
+════════════════════════════════════════════ -->
+<section id="portfolio">
+
+  <div class="page-hero">
+    <div class="section-tag">Trabalhos realizados</div>
+    <h1 class="section-title">PORTFÓLIO <span>TÉCNICO</span></h1>
+  </div>
+
+  <div class="portfolio-list">
+    <div class="portfolio-item">
+      <div class="portfolio-num">01</div>
+      <div class="portfolio-content">
+        <div class="portfolio-title">Montagem de Quadro Elétrico</div>
+        <div class="portfolio-situation"><strong>Situação:</strong><span>Aquecimento em conexões e distribuição inadequada de carga</span></div>
+        <div class="portfolio-situation"><strong>Serviço:</strong><span>Reorganização interna completa e substituição de disjuntores</span></div>
+        <div class="portfolio-situation"><strong>Resultado:</strong><span>Sistema estabilizado com melhor distribuição de carga e segurança ampliada</span></div>
+      </div>
+      <div class="portfolio-badge">Concluído</div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-num">02</div>
+      <div class="portfolio-content">
+        <div class="portfolio-title">Instalação Elétrica Predial</div>
+        <div class="portfolio-situation"><strong>Serviço:</strong><span>Instalação completa de infraestrutura elétrica em unidade predial</span></div>
+        <div class="portfolio-situation"><strong>Etapas:</strong><span>Projeto, execução, cabeamento, montagem de quadros e testes finais</span></div>
+        <div class="portfolio-situation"><strong>Entregável:</strong><span>Laudo técnico e documentação completa do sistema instalado</span></div>
+      </div>
+      <div class="portfolio-badge">Concluído</div>
+    </div>
+  </div>
+
+  <div style="text-align:center; padding:60px 80px 80px;">
+    <button class="btn-primary" onclick="show('orcamento')">Solicitar Orçamento →</button>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ORÇAMENTO
+════════════════════════════════════════════ -->
+<section id="orcamento">
+
+  <div class="page-hero">
+    <div class="section-tag">Fale conosco</div>
+    <h1 class="section-title">SOLICITAR <span>ORÇAMENTO</span></h1>
+  </div>
+
+  <div class="orcamento-wrapper">
+    <div class="orcamento-info">
+      <p>Preencha o formulário com os detalhes do seu projeto. Nossa equipe entrará em contato para apresentar uma proposta técnica personalizada.</p>
+      <div class="info-list">
+        <div class="info-item">Resposta em até 24 horas úteis</div>
+        <div class="info-item">Avaliação técnica sem compromisso</div>
+        <div class="info-item">Proposta detalhada com memorial</div>
+        <div class="info-item">Atendimento em toda a região</div>
+      </div>
+    </div>
+    <div class="orcamento-form">
+      <form id="orcamento-form" onsubmit="enviarOrcamento(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Nome completo *</label>
+            <input class="form-input" id="f-nome" name="Nome" type="text" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Telefone / WhatsApp *</label>
+            <input class="form-input" id="f-tel" name="Telefone" type="tel" placeholder="(11) 98034-9419" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">E-mail</label>
+          <input class="form-input" id="f-email" name="Email" type="email" placeholder="seu@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tipo de serviço</label>
+          <select class="form-select" id="f-servico" name="Servico">
+            <option value="">Selecione...</option>
+            <option>Projeto elétrico</option>
+            <option>Instalação elétrica</option>
+            <option>Montagem de quadro</option>
+            <option>Manutenção elétrica</option>
+            <option>Engenharia clínica</option>
+            <option>Avaliação técnica</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Descrição da necessidade</label>
+          <textarea class="form-textarea" id="f-desc" name="Descricao" placeholder="Descreva o que precisa..."></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Cidade</label>
+          <input class="form-input" id="f-cidade" name="Cidade" type="text" placeholder="Sua cidade">
+        </div>
+        <button type="submit" class="form-submit" id="f-btn">Enviar Solicitação →</button>
+        <div class="form-success" id="form-success">✓ Solicitação enviada! Entraremos em contato em breve.</div>
+        <div class="form-error"   id="form-error">✗ Erro ao enviar. Tente novamente.</div>
+      </form>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTATO
+════════════════════════════════════════════ -->
+<section id="contato">
+
+  <div class="page-hero">
+    <div class="section-tag">Fale com a equipe</div>
+    <h1 class="section-title">ENTRE EM <span>CONTATO</span></h1>
+  </div>
+
+  <div class="contato-wrapper">
+    <div class="contato-block">
+      <h3>Canais de Atendimento</h3>
+      <div class="contato-item">
+        <div class="contato-icon">📞</div>
+        <div>
+          <div class="contato-detail">Telefone / WhatsApp</div>
+          <div class="contato-value">(11) 98034-9419</div>
+        </div>
+      </div>
+      <div class="contato-item">
+        <div class="contato-icon">✉️</div>
+        <div>
+          <div class="contato-detail">E-mail</div>
+          <div class="contato-value">rubensmzybr@outlook.com</div>
+        </div>
+      </div>
+      <div class="contato-item">
+        <div class="contato-icon">📍</div>
+        <div>
+          <div class="contato-detail">Área de Atendimento</div>
+          <div class="contato-value">Região metropolitana e interior</div>
+        </div>
+      </div>
+      <a href="https://wa.me/5511980349419" class="wa-btn" target="_blank" rel="noreferrer">
+        💬 Falar no WhatsApp
+      </a>
+    </div>
+    <div class="contato-horario">
+      <h3>Horário de Atendimento</h3>
+      <div class="horario-item"><span class="horario-dia">Segunda — Sexta</span><span class="horario-time">08:00 — 18:00</span></div>
+      <div class="horario-item"><span class="horario-dia">Sábado</span><span class="horario-time">08:00 — 12:00</span></div>
+      <div class="horario-item"><span class="horario-dia">Domingo</span><span class="horario-time">Sob agendamento</span></div>
+      <div class="horario-item"><span class="horario-dia">Emergências</span><span class="horario-time accent">24h via WhatsApp</span></div>
+      <div style="margin-top:40px; padding-top:32px; border-top:1px solid var(--border);">
+        <button class="btn-primary" onclick="show('orcamento')" style="display:block; width:100%; text-align:center;">
+          Solicitar Orçamento →
+        </button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo">RYB<span>ENG</span></div>
+  <div class="footer-text">Engenharia Elétrica · Manutenção Técnica · Projetos Elétricos</div>
+  <div class="footer-copy">&copy; 2025 RYB Engenharia</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
